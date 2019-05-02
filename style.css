@@ -7,9 +7,10 @@ body {
     margin: 20px auto;
     height: 300px;
     display: grid;
-    grid-gap: 4px;
-    grid-template-rows: 100px 100px 1fr 1fr;
-    grid-template-columns: 80px 1fr 30px;
+    grid-gap: 6px;
+    grid-template-rows: 100px 100px 2fr 2fr;
+    grid-template-columns: 50px 3fr 1fr 1fr 1fr;
+    background-color: black;
 }
 
 .item {
@@ -19,22 +20,42 @@ body {
 .one {
     grid-row: 1;
     grid-column: 1;
+    background-color: white;
 }
 
 .two {
+   grid-column-start: 2;
+   grid-column-end: 6; 
+   grid-row-start: 1;
+   grid-row-end: 3;
+   background-color: red;
 }
 
 .three {
-}
+} 
 
 .four {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: blue;
 }
 
 .five {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 
 .six {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: yellow;
 }
 
 .seven {
+
+    
 }
